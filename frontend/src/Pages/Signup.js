@@ -19,7 +19,7 @@ const Signup = () => {
             return handleError("name, email and password is required")
         }
         try {
-            const url = "http://localhost:8000/auth/signup"
+            const url = "https://backend-login-app-api1.vercel.app/auth/signup"
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -99,5 +99,6 @@ const Signup = () => {
         </div>
     )
 }
+
 
 export default Signup
