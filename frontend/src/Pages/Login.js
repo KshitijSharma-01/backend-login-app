@@ -18,7 +18,7 @@ const Login = () => {
       return handleError("email and password is required")
     }
     try {
-      const url = "https://backend-login-app-api1.vercel.app/auth/login"
+      const url = "https://backend-login-app-api.vercel.app/auth/login"
       const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -92,3 +92,4 @@ const Login = () => {
 
 
 export default Login
+
