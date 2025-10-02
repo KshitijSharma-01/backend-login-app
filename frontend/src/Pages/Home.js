@@ -23,7 +23,7 @@ const Home = () => {
 
   const fetchProducts = async () => {
     try {
-      const url = "http://localhost:8000/products"
+      const url = "https://backend-login-app-api1.vercel.app/products"
       const headers = {
         headers: {
           "Authorization": localStorage.getItem("token")
@@ -59,5 +59,6 @@ const Home = () => {
     </div>
   )
 }
+
 
 export default Home
